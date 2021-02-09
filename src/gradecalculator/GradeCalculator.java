@@ -26,16 +26,4 @@ public class GradeCalculator {
         return finalCalc;
     }
     
-    public static double calcMax(double[] grades){
-        
-        double maxNumber = 0;
-        
-        for (int i = 1; i < grades.length; i++) 
-            
-             if (grades[i] > maxNumber)
-                 maxNumber = grades[i];
-        
-         return maxNumber;
-    }
-    
 }
