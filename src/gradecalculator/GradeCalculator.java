@@ -1,14 +1,12 @@
 package gradecalculator;
 
 public class GradeCalculator {
-
     
     public static void main(String[] args) {
         
         double[] grades = {44.3, 60.6, 90.4, 78, 88, 33.34, 94, 44, 69, 77};
         
         System.out.printf("Average of all %d grades is: %.2f\n", grades.length, calcAvg(grades));
-        System.out.printf("The highest grade is: %.2f\n", calcMax(grades));
     }
     
     public static double calcAvg(double[] grades){
@@ -25,5 +23,4 @@ public class GradeCalculator {
         
         return finalCalc;
     }
-    
 }
