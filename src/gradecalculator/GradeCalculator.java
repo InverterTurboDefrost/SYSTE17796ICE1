@@ -2,15 +2,16 @@ package gradecalculator;
 
 public class GradeCalculator {
 
-    //This is a comment that was added later on the remote side!
-    static double[] grades = {44.3, 60.6, 90.4, 78, 88, 33.34, 94, 44, 69, 77};
     
     public static void main(String[] args) {
-        System.out.printf("Average of all %d grades is: %.2f\n", grades.length, calcAvg());
-        System.out.printf("The highest grade is: %.2f\n", calcMax());
+        
+        double[] grades = {44.3, 60.6, 90.4, 78, 88, 33.34, 94, 44, 69, 77};
+        
+        System.out.printf("Average of all %d grades is: %.2f\n", grades.length, calcAvg(grades));
+        System.out.printf("The highest grade is: %.2f\n", calcMax(grades));
     }
     
-    public static double calcAvg(){
+    public static double calcAvg(double[] grades){
         
         double finalCalc = 0;
         
@@ -25,7 +26,7 @@ public class GradeCalculator {
         return finalCalc;
     }
     
-    public static double calcMax(){
+    public static double calcMax(double[] grades){
         
         double maxNumber = 0;
         
