@@ -2,6 +2,7 @@ package gradecalculator;
 
 public class GradeCalculator {
 
+    //This is a comment that was added later on the remote side!
     static double[] grades = {44.3, 60.6, 90.4, 78, 88, 33.34, 94, 44, 69, 77};
     
     public static void main(String[] args) {
